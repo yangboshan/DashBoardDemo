@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C99C9CA7172A0E8F00339D82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C9CA6172A0E8F00339D82 /* UIKit.framework */; };
+		C99C9CA9172A0E8F00339D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C9CA8172A0E8F00339D82 /* Foundation.framework */; };
+		C99C9CAB172A0E8F00339D82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C9CAA172A0E8F00339D82 /* CoreGraphics.framework */; };
+		C99C9CB1172A0E8F00339D82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CAF172A0E8F00339D82 /* InfoPlist.strings */; };
+		C99C9CB3172A0E8F00339D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9CB2172A0E8F00339D82 /* main.m */; };
+		C99C9CB9172A0E8F00339D82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CB8172A0E8F00339D82 /* Default.png */; };
+		C99C9CBB172A0E8F00339D82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CBA172A0E8F00339D82 /* Default@2x.png */; };
+		C99C9CBD172A0E8F00339D82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CBC172A0E8F00339D82 /* Default-568h@2x.png */; };
+		C99C9CCA172A0EB300339D82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C9CC9172A0EB300339D82 /* QuartzCore.framework */; };
+		C99C9CCC172A0EBA00339D82 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C9CCB172A0EBA00339D82 /* SystemConfiguration.framework */; };
+		C99C9CD4172A0FA100339D82 /* alabel.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CCE172A0FA100339D82 /* alabel.png */; };
+		C99C9CD5172A0FA100339D82 /* blabel.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CCF172A0FA100339D82 /* blabel.png */; };
+		C99C9CD6172A0FA100339D82 /* clabel.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CD0172A0FA100339D82 /* clabel.png */; };
+		C99C9CD7172A0FA100339D82 /* searchbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CD1172A0FA100339D82 /* searchbtn.png */; };
+		C99C9CD8172A0FA100339D82 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CD2172A0FA100339D82 /* background.jpg */; };
+		C99C9CD9172A0FA100339D82 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CD3172A0FA100339D82 /* pointer.png */; };
+		C99C9CDB172A0FBA00339D82 /* panelbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CDA172A0FBA00339D82 /* panelbackground.png */; };
+		C99C9CDE172A100800339D82 /* TZPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9CDD172A100800339D82 /* TZPanel.m */; };
+		C99C9CE1172A11B100339D82 /* TZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9CE0172A11B100339D82 /* TZViewController.m */; };
+		C99C9CE4172A122E00339D82 /* TZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C9CE3172A122E00339D82 /* TZAppDelegate.m */; };
+		C99C9CE6172A125600339D82 /* TZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CE5172A125600339D82 /* TZViewController.xib */; };
+		C99C9CE8172A1ABB00339D82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C99C9CE7172A1ABB00339D82 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C99C9CA3172A0E8F00339D82 /* 仪表Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仪表Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99C9CA6172A0E8F00339D82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C99C9CA8172A0E8F00339D82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C99C9CAA172A0E8F00339D82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C99C9CAE172A0E8F00339D82 /* DashBoardDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DashBoardDemo-Info.plist"; sourceTree = "<group>"; };
+		C99C9CB0172A0E8F00339D82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C99C9CB2172A0E8F00339D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C99C9CB4172A0E8F00339D82 /* DashBoardDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashBoardDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C99C9CB8172A0E8F00339D82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C99C9CBA172A0E8F00339D82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C99C9CBC172A0E8F00339D82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C99C9CC9172A0EB300339D82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C99C9CCB172A0EBA00339D82 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C99C9CCE172A0FA100339D82 /* alabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alabel.png; sourceTree = "<group>"; };
+		C99C9CCF172A0FA100339D82 /* blabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blabel.png; sourceTree = "<group>"; };
+		C99C9CD0172A0FA100339D82 /* clabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clabel.png; sourceTree = "<group>"; };
+		C99C9CD1172A0FA100339D82 /* searchbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbtn.png; sourceTree = "<group>"; };
+		C99C9CD2172A0FA100339D82 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		C99C9CD3172A0FA100339D82 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
+		C99C9CDA172A0FBA00339D82 /* panelbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panelbackground.png; sourceTree = "<group>"; };
+		C99C9CDC172A100800339D82 /* TZPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPanel.h; sourceTree = "<group>"; };
+		C99C9CDD172A100800339D82 /* TZPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPanel.m; sourceTree = "<group>"; };
+		C99C9CDF172A11B100339D82 /* TZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZViewController.h; sourceTree = "<group>"; };
+		C99C9CE0172A11B100339D82 /* TZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZViewController.m; sourceTree = "<group>"; };
+		C99C9CE2172A122E00339D82 /* TZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAppDelegate.h; sourceTree = "<group>"; };
+		C99C9CE3172A122E00339D82 /* TZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAppDelegate.m; sourceTree = "<group>"; };
+		C99C9CE5172A125600339D82 /* TZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZViewController.xib; sourceTree = "<group>"; };
+		C99C9CE7172A1ABB00339D82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C99C9CA0172A0E8F00339D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C9CCC172A0EBA00339D82 /* SystemConfiguration.framework in Frameworks */,
+				C99C9CCA172A0EB300339D82 /* QuartzCore.framework in Frameworks */,
+				C99C9CA7172A0E8F00339D82 /* UIKit.framework in Frameworks */,
+				C99C9CA9172A0E8F00339D82 /* Foundation.framework in Frameworks */,
+				C99C9CAB172A0E8F00339D82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C99C9C9A172A0E8F00339D82 = {
+			isa = PBXGroup;
+			children = (
+				C99C9CAC172A0E8F00339D82 /* DashBoardDemo */,
+				C99C9CA5172A0E8F00339D82 /* Frameworks */,
+				C99C9CA4172A0E8F00339D82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C99C9CA4172A0E8F00339D82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C99C9CA3172A0E8F00339D82 /* 仪表Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C99C9CA5172A0E8F00339D82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99C9CC9172A0EB300339D82 /* QuartzCore.framework */,
+				C99C9CA6172A0E8F00339D82 /* UIKit.framework */,
+				C99C9CCB172A0EBA00339D82 /* SystemConfiguration.framework */,
+				C99C9CA8172A0E8F00339D82 /* Foundation.framework */,
+				C99C9CAA172A0E8F00339D82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C99C9CAC172A0E8F00339D82 /* DashBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C99C9CCD172A0EF500339D82 /* Resource */,
+				C99C9CE2172A122E00339D82 /* TZAppDelegate.h */,
+				C99C9CE3172A122E00339D82 /* TZAppDelegate.m */,
+				C99C9CDC172A100800339D82 /* TZPanel.h */,
+				C99C9CDD172A100800339D82 /* TZPanel.m */,
+				C99C9CDF172A11B100339D82 /* TZViewController.h */,
+				C99C9CE0172A11B100339D82 /* TZViewController.m */,
+				C99C9CE5172A125600339D82 /* TZViewController.xib */,
+				C99C9CAD172A0E8F00339D82 /* Supporting Files */,
+			);
+			path = DashBoardDemo;
+			sourceTree = "<group>";
+		};
+		C99C9CAD172A0E8F00339D82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C99C9CAE172A0E8F00339D82 /* DashBoardDemo-Info.plist */,
+				C99C9CAF172A0E8F00339D82 /* InfoPlist.strings */,
+				C99C9CB2172A0E8F00339D82 /* main.m */,
+				C99C9CB4172A0E8F00339D82 /* DashBoardDemo-Prefix.pch */,
+				C99C9CB8172A0E8F00339D82 /* Default.png */,
+				C99C9CBA172A0E8F00339D82 /* Default@2x.png */,
+				C99C9CBC172A0E8F00339D82 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C99C9CCD172A0EF500339D82 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C99C9CE7172A1ABB00339D82 /* icon.png */,
+				C99C9CDA172A0FBA00339D82 /* panelbackground.png */,
+				C99C9CCE172A0FA100339D82 /* alabel.png */,
+				C99C9CCF172A0FA100339D82 /* blabel.png */,
+				C99C9CD0172A0FA100339D82 /* clabel.png */,
+				C99C9CD1172A0FA100339D82 /* searchbtn.png */,
+				C99C9CD2172A0FA100339D82 /* background.jpg */,
+				C99C9CD3172A0FA100339D82 /* pointer.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C99C9CA2172A0E8F00339D82 /* DashBoardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99C9CC6172A0E8F00339D82 /* Build configuration list for PBXNativeTarget "DashBoardDemo" */;
+			buildPhases = (
+				C99C9C9F172A0E8F00339D82 /* Sources */,
+				C99C9CA0172A0E8F00339D82 /* Frameworks */,
+				C99C9CA1172A0E8F00339D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashBoardDemo;
+			productName = DashBoardDemo;
+			productReference = C99C9CA3172A0E8F00339D82 /* 仪表Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C99C9C9B172A0E8F00339D82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TZ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = XLDZ;
+			};
+			buildConfigurationList = C99C9C9E172A0E8F00339D82 /* Build configuration list for PBXProject "DashBoardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C99C9C9A172A0E8F00339D82;
+			productRefGroup = C99C9CA4172A0E8F00339D82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C99C9CA2172A0E8F00339D82 /* DashBoardDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C99C9CA1172A0E8F00339D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C9CB1172A0E8F00339D82 /* InfoPlist.strings in Resources */,
+				C99C9CB9172A0E8F00339D82 /* Default.png in Resources */,
+				C99C9CBB172A0E8F00339D82 /* Default@2x.png in Resources */,
+				C99C9CBD172A0E8F00339D82 /* Default-568h@2x.png in Resources */,
+				C99C9CD4172A0FA100339D82 /* alabel.png in Resources */,
+				C99C9CD5172A0FA100339D82 /* blabel.png in Resources */,
+				C99C9CD6172A0FA100339D82 /* clabel.png in Resources */,
+				C99C9CD7172A0FA100339D82 /* searchbtn.png in Resources */,
+				C99C9CD8172A0FA100339D82 /* background.jpg in Resources */,
+				C99C9CD9172A0FA100339D82 /* pointer.png in Resources */,
+				C99C9CDB172A0FBA00339D82 /* panelbackground.png in Resources */,
+				C99C9CE6172A125600339D82 /* TZViewController.xib in Resources */,
+				C99C9CE8172A1ABB00339D82 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C99C9C9F172A0E8F00339D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99C9CB3172A0E8F00339D82 /* main.m in Sources */,
+				C99C9CDE172A100800339D82 /* TZPanel.m in Sources */,
+				C99C9CE1172A11B100339D82 /* TZViewController.m in Sources */,
+				C99C9CE4172A122E00339D82 /* TZAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C99C9CAF172A0E8F00339D82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99C9CB0172A0E8F00339D82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C99C9CC4172A0E8F00339D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xing Wei Institute (Hongkong) Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xing Wei Institute (Hongkong) Limited";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E0824063-B89E-4BF8-8046-55BDAC7A171C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0824063-B89E-4BF8-8046-55BDAC7A171C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C99C9CC5172A0E8F00339D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xing Wei Institute (Hongkong) Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xing Wei Institute (Hongkong) Limited";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "E0824063-B89E-4BF8-8046-55BDAC7A171C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0824063-B89E-4BF8-8046-55BDAC7A171C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C99C9CC7172A0E8F00339D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DashBoardDemo/DashBoardDemo-Prefix.pch";
+				INFOPLIST_FILE = "DashBoardDemo/DashBoardDemo-Info.plist";
+				PRODUCT_NAME = "仪表Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C99C9CC8172A0E8F00339D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DashBoardDemo/DashBoardDemo-Prefix.pch";
+				INFOPLIST_FILE = "DashBoardDemo/DashBoardDemo-Info.plist";
+				PRODUCT_NAME = "仪表Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C99C9C9E172A0E8F00339D82 /* Build configuration list for PBXProject "DashBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C9CC4172A0E8F00339D82 /* Debug */,
+				C99C9CC5172A0E8F00339D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C99C9CC6172A0E8F00339D82 /* Build configuration list for PBXNativeTarget "DashBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C9CC7172A0E8F00339D82 /* Debug */,
+				C99C9CC8172A0E8F00339D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C99C9C9B172A0E8F00339D82 /* Project object */;
+}

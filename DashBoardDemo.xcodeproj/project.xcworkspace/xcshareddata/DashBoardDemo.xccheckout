@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F804FE6-678B-40B7-8550-CF47948CCEF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DashBoardDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A78CBF93-D78C-4FCE-B7A1-5FCF7C359038</key>
+		<string>https://10.10.100.100/svn/ManageLib/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/APP%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/IOS%E4%BB%AA%E8%A1%A8Demo</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DashBoardDemo/DashBoardDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A78CBF93-D78C-4FCE-B7A1-5FCF7C359038</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>A78CBF93-D78C-4FCE-B7A1-5FCF7C359038</key>
+		<string>https://10.10.100.100/svn/ManageLib</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://10.10.100.100/svn/ManageLib/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/APP%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/IOS%E4%BB%AA%E8%A1%A8Demo/DashBoardDemo/DashBoardDemo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A78CBF93-D78C-4FCE-B7A1-5FCF7C359038</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A78CBF93-D78C-4FCE-B7A1-5FCF7C359038</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS仪表Demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

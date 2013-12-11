@@ -1,0 +1,226 @@
+//
+//  TZViewController.m
+//  DashBoardDemo
+//
+//  Created by Apple on 13-4-22.
+//  Copyright (c) 2013年 XLDZ. All rights reserved.
+//
+
+#import "TZViewController.h"
+#import "TZPanel.h"
+
+#define ARC4RANDOM_MAX      0x100000000
+@interface TZViewController ()
+
+@end
+
+@implementation TZViewController
+
+@synthesize panel1,panel2,panel3,panel4,panel5;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self initDashBoard:5];
+    
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.jpg"]]];
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setFrame:CGRectMake(self.view.frame.size.width/2-50,
+                                self.view.frame.size.height/2+300, 77, 35)];
+    [button addTarget:self action:@selector(beginMonitor) forControlEvents:
+                                 UIControlEventTouchDown];
+    [button setBackgroundImage:[UIImage imageNamed:@"searchbtn.png"] forState:UIControlStateNormal];
+    
+    [self.view addSubview:button]; 
+    [button release];
+}
+
+-(void)initDashBoard:(NSInteger)number
+{
+    for (int i = 0;i<number; i++)
+    {
+        TZPanel *panel = [[TZPanel alloc] initWithFrame:
+                        CGRectMake(0, 0, 300, 300)];
+        
+        panel.maxNumber   = 120;
+        panel.minNumber   = 0.0f;
+        panel.maxAngle    = 120;
+        panel.minAngle    = -120;
+        panel.defaultSize = 300;
+        panel.cellNumber  = 12;
+        panel.cellMarkNumber =5;
+        
+        switch (i) {
+            case 0:
+                
+                panel.center = CGPointMake(212, 400);
+                panel.cellNumber = 10;
+                panel.maxNumber = 300;
+                panel.panelText = @"电压/ V";
+                panel.decimalDigit = 1;
+                panel.tag = 1;
+                self.panel1 = panel;
+                break;
+                
+            case 1:
+                
+                panel.center = CGPointMake(512, 400);
+                                panel.cellNumber = 10;
+                panel.maxNumber = 10;
+                panel.decimalDigit = 3;
+                panel.tag = 2;
+                panel.panelText = @"电流/ A";
+                self.panel2 = panel;
+                break;
+                
+            case 2:
+                
+                panel.center = CGPointMake(812, 400);
+                                panel.cellNumber = 5;
+                panel.maxNumber  = 5;
+                panel.decimalDigit = 3;
+                panel.tag = 3;
+                panel.panelText = @"总有功率";
+                self.panel3 = panel;
+                break;
+                
+            case 3:
+               
+                panel.defaultSize = 200;
+                panel.minNumber = 0.0f;
+                panel.maxNumber = 80;
+                panel.cellNumber = 4;
+                panel.cellMarkNumber = 10;
+                panel.decimalDigit = 1;
+                panel.tag = 4;
+                panel.panelText = @"绕组温度";
+                panel.frame  = CGRectMake(0, 0, 200, 200);
+                panel.center = CGPointMake(360, 600);
+                self.panel4 = panel;
+                break;
+                
+            case 4:
+                
+                panel.defaultSize = 200;
+                panel.minNumber = 0.0f;
+                panel.maxNumber = 50;
+                panel.cellNumber = 5;
+                panel.decimalDigit = 1;
+                panel.tag = 5;
+                panel.panelText = @"环境温度";
+                
+                panel.frame  = CGRectMake(0, 0, 200, 200);
+                panel.center = CGPointMake(660, 600);
+                self.panel5 = panel;
+                break;
+            default:
+                break;
+        }
+        
+        [self.view addSubview:panel];
+        [panel release];
+    }
+}
+
+bool flag = YES;
+-(void)beginMonitor
+{
+    if (flag) {
+        timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(generateMockData:) userInfo:nil repeats:YES];
+        flag = NO;
+    } else
+    {
+        for (UIView *subView in self.view.subviews)
+        {
+            if ([subView isKindOfClass:[TZPanel class]]) {
+                TZPanel *temp = (TZPanel*)subView;
+                [temp setGaugeValue:0 animation:YES];
+            }
+        }
+        
+        [timer invalidate];
+        flag = YES;
+    }
+}
+
+//生成测试数据
+-(void)generateMockData:(NSTimer *) timer
+{
+    for (UIView *subView in self.view.subviews)
+    {
+        if ([subView isKindOfClass:[TZPanel class]]) {
+            
+            float rands=0;
+            
+            switch (subView.tag) {
+                case 1:
+                    rands = ((float)arc4random()/ ARC4RANDOM_MAX)*4 -2 + 220;
+                    self.aPressure.text =[NSString stringWithFormat:@"%.1f",rands];
+                    break;
+                    
+                case 2:
+                    rands = (float)rand() / RAND_MAX*2
+                                        -1 + 4;
+                    self.aElectric.text =[NSString stringWithFormat:@"%.3f",rands];
+                    break;
+                    
+                case 3:
+                    rands = ((float)rand() / RAND_MAX*2 -1)/10
+                                         +1;
+                    self.aPower.text =[NSString stringWithFormat:@"%.3f",rands];
+                    break;
+                    
+                case 4:
+                    rands = (float)rand() / RAND_MAX*4
+                                         -2 + 65;
+                    self.aTemperature.text =[NSString stringWithFormat:@"%.1f",rands];
+                    break;
+                    
+                case 5:
+                    rands = (float)rand() / RAND_MAX*4
+                                        -2 +35;
+                    break;
+                    
+                default:
+                    break;
+            }
+            
+            TZPanel *gauge = (TZPanel*)subView;
+            [gauge setGaugeValue:rands animation:YES];
+        }
+    }
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    self.panel1 =nil;
+    self.panel2 = nil;
+    self.panel3 = nil;
+    self.panel4 = nil;
+    self.panel5 = nil;
+}
+
+-(void)dealloc
+{
+    [super dealloc];
+    
+    [_aPressure release];
+    [_aElectric release];
+    [_aPower release];
+    [_aTemperature release];
+    
+
+    
+    [panel1 release];
+    [panel2 release];
+    [panel3 release];
+    [panel4 release];
+    [panel5 release];
+
+}
+
+@end
